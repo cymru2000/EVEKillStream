@@ -1,0 +1,23 @@
+{
+  "name": "eve-killstream",
+  "version": "1.0.0",
+  "description": "View a live killstream from the ZKillboard API",
+  "main": "EVEKillStream.js",
+  "dependencies": {
+    "ws": "^7.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cymru2000/evekillstream.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cymru2000/evekillstream/issues"
+  },
+  "homepage": "https://github.com/cymru2000/evekillstream#readme"
+}
