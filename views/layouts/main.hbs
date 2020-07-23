@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Eve Online Killstream</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+  
+     <script>
+      function autoRefresh_div() {
+      $("#main").load(location.href + ' #main');
+     }
+    setInterval(autoRefresh_div, 2500);
+    autoRefresh_div(); // on load
+    </script> 
+  
+  
+  </head>
+    <body>
+      <div id="main">{{{body}}}</div>
+    </body>
+</html>
