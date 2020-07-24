@@ -13,7 +13,7 @@ const ws = new WebSocket('wss://zkillboard.com:2096')
 
 //Define the dev HTTP server settings
 const host = 'localhost';
-const port = 8000;
+const port = 443;
 
 app.engine('.hbs', exphbs({
     defaultLayout: 'main',
