@@ -23,7 +23,7 @@ app.engine('.hbs', exphbs({
 app.set('view engine', '.hbs')
 app.set('views', path.join(__dirname, 'views'))
 
-//Define all the variables as 0 or blank (may or may not be useful in the future)
+//Define all the variables as 0 or blank
 var killcounter = 0;
 var totalValue = 0;
 var value = 0;
