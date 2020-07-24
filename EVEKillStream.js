@@ -66,7 +66,7 @@ ws.on('message', function incoming(data) {
     zkb = recv["zkb"];
     value = zkb["totalValue"];
     runningValue = (value + runningValue)
-    totalValue = runningValue/1000000000;
+    totalValue = (runningValue/1000000000).toFixed(2);
 
     //console.log(recv);
     console.log("==========");

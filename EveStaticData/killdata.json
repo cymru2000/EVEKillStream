@@ -1,0 +1,63 @@
+{
+  attackers: [
+    {
+      alliance_id: 99005513,
+      character_id: 94095406,
+      corporation_id: 98261736,
+      damage_done: 2090,
+      faction_id: 500004,
+      final_blow: false,
+      security_status: 0.6,
+      ship_type_id: 593,
+      weapon_type_id: 2205
+    },
+    {
+      character_id: 2116901268,
+      corporation_id: 98399881,
+      damage_done: 1961,
+      faction_id: 500004,
+      final_blow: true,
+      security_status: 4.9,
+      ship_type_id: 593,
+      weapon_type_id: 2456
+    }
+  ],
+  killmail_id: 85842930,
+  killmail_time: '2020-07-23T14:56:43Z',
+  solar_system_id: 30003795,
+  victim: {
+    character_id: 2117040855,
+    corporation_id: 1000180,
+    damage_taken: 4051,
+    faction_id: 500001,
+    items: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    position: {
+      x: -208919596735.32925,
+      y: 233873073776.11578,
+      z: -424858088402.135
+    },
+    ship_type_id: 603
+  },
+  zkb: {
+    locationID: 40240484,
+    hash: '2e7e219aedd8156b65bc17e857c2ffc7d276ddbc',
+    fittedValue: 865925,
+    totalValue: 1799766.56,
+    points: 1,
+    npc: false,
+    solo: false,
+    awox: false,
+    esi: 'https://esi.evetech.net/latest/killmails/85842930/2e7e219aedd8156b65bc17e857c2ffc7d276ddbc/',
+    url: 'https://zkillboard.com/kill/85842930/'
+  }
+}
