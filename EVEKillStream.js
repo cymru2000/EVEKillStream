@@ -5,6 +5,9 @@ const fs   = require('fs');
 const path = require('path')
 const express = require('express')
 const exphbs = require('express-handlebars')
+const CosmosClient = require("@azure/cosmos").CosmosClient;
+const config = require("./config.js");
+const dbContext = require("./data/databaseContext");
 
 const app = express()
 
