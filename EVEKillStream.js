@@ -67,7 +67,7 @@ ws.on('message', function incoming(data) {
     rawship_type = victim["ship_type_id"];
     
     
-    const queryspec = { query: "select i.typeName from invTypes i where i.typeID = " rawship_type;
+    const queryspec = { query: "select i.typeName from invTypes i where i.typeID = ",rawship_type};
     const { resources: items } = await container.items
         .query(querySpec)
         .fetchAll();
