@@ -84,7 +84,8 @@ ws.on('message', function incoming(data) {
           km_time: km_time,
           ship_type: ship_type, 
           solar_system: solar_system,
-          totalValue: totalValue
+          totalValue: totalValue,
+          value: value
         })
       })
 });
