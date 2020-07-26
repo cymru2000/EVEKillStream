@@ -39,6 +39,7 @@ var runningValue = 0;
 var km_time = "";
 var solar_system = "";
 var victim = "";
+var rawship_type = "0";
 var ship_type = "";
   
 app.listen(port, (err) => {
