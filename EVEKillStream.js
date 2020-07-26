@@ -40,13 +40,6 @@ var km_time = "";
 var solar_system = "";
 var victim = "";
 var ship_type = "";
-
-//Load the YAML. This is where the ship names to ID's live. Probably a better idea to turn this into a database table and query that. It's unused in this code anyway!
-try {
-    typeIDs = yaml.load(fs.readFileSync('./EveStaticData/typeIDs.yaml', 'utf8'));
-} catch (e) {
-    console.log(e);
-}
   
 app.listen(port, (err) => {
     if (err) {
@@ -70,7 +63,15 @@ ws.on('message', function incoming(data) {
     km_time = recv["killmail_time"];
     solar_system = recv["solar_system_id"];
     victim = recv["victim"];
-    ship_type = victim["ship_type_id"];
+    rawship_type = victim["ship_type_id"];
+    
+    
+    const queryspec = { query: "select i.typeName from invTypes i where i.typeID = " rawship_type;
+    const { resources: items } = await container.items
+        .query(querySpec)
+        .fetchAll();
+    ship_type = '$typeName'
+                                   
     zkb = recv["zkb"];
     value = zkb["totalValue"];
     runningValue = (value + runningValue)
