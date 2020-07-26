@@ -85,7 +85,7 @@ ws.on('message', function incoming(data) {
           ship_type: ship_type, 
           solar_system: solar_system,
           totalValue: totalValue,
-          value: value
+          value: (value/1000000).toFixed(2)
         })
       })
 });
