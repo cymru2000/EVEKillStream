@@ -10,6 +10,12 @@ const config = require("./config.js");
 
 const app = express()
 
+//Connect to cosmosdb
+const { endpoint, key, databaseId, containerId } = config;
+const client = new CosmosClient({ endpoint, key });
+const database = client.database(databaseId);
+const container = database.container(containerId);
+
 //Define the websocket connection
 const ws = new WebSocket('wss://zkillboard.com:2096')
 
